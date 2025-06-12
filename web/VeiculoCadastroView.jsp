@@ -25,8 +25,6 @@
                     <li><a href="VeiculoListaView.jsp">Catálogo</a></li>
                     <li><a href="CarrinhoView.jsp">Carrinho</a></li> 
                     <li><a href="PedidosView.jsp">Pedidos</a></li>
-                    <li><a href="sobre.jsp">Sobre Nós</a></li>
-                    <li><a href="contato.jsp">Contato</a></li>
                     <li><a href="AltUsuario">Alterar dados</a></li>
                 </ul>
                 <div class="nav-auth-buttons">
@@ -63,7 +61,8 @@
                 </div>
                 <% }%>
 
-                <form action="${pageContext.request.contextPath}/CadVeiculo" method="post" class="cadastro-form">
+                <form action="${pageContext.request.contextPath}/CadVeiculo" method="post" enctype="multipart/form-data" class="cadastro-form">
+
                     <div class="textfield">
                         <label for="categoriaVeiculo">Categoria do Veículo:</label>
                         <select id="categoriaVeiculo" name="categoriaVeiculo" required>
@@ -75,8 +74,8 @@
                     </div>
                     
                     <div class="textfield">
-                        <label for="imagem">Imagem:</label>
-                        <input type="text" id="imagem" name="imagem" placeholder="Link da imagem" required>
+                        <label for="imagem">Imagem do Veículo:</label>
+                        <input type="file" id="imagem" name="imagem" accept="image/*" required>
                     </div>
                     
                     <div class="textfield">

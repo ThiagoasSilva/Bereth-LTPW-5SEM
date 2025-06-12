@@ -29,8 +29,6 @@
                     <li><a href="ListaVeiculo">Catálogo</a></li> <%-- Mudei para ListaVeiculo, que parece ser o Servlet para o catálogo --%>
                     <li><a href="CarrinhoView.jsp">Carrinho</a></li> 
                     <li><a href="PedidosView.jsp">Pedidos</a></li>
-                    <li><a href="sobre.jsp">Sobre Nós</a></li>
-                    <li><a href="contato.jsp">Contato</a></li>
                     <li><a href="AltUsuario">Alterar dados</a></li> 
                 </ul>
                 <div class="nav-auth-buttons">

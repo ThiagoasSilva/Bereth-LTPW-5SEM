@@ -3,8 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/bryan/OneDrive/Documentos/GitHub/Bereth-LTPW-5SEM/src/java/Bean/ConfirmacaoPagamentoServlet.java</file>
-            <file>file:/C:/Users/bryan/OneDrive/Documentos/GitHub/Bereth-LTPW-5SEM/src/java/Bean/PagamentoServlet.java</file>
+            <file>file:/C:/Users/bryan/OneDrive/Documentos/GitHub/Bereth-LTPW-5SEM/web/VeiculoCadastroView.jsp</file>
+            <file>file:/C:/Users/bryan/OneDrive/Documentos/GitHub/Bereth-LTPW-5SEM/web/VeiculoListaView.jsp</file>
+            <file>file:/C:/Users/bryan/OneDrive/Documentos/GitHub/Bereth-LTPW-5SEM/src/java/Bean/VeiculoCadastroServlet.java</file>
         </group>
     </open-files>
 </project-private>

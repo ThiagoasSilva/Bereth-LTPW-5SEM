@@ -38,8 +38,6 @@
             <li><a href="VeiculoListaView.jsp">Catálogo</a></li> 
             <li><a href="CarrinhoView.jsp">Carrinho</a></li> 
             <li><a href="PedidosView.jsp">Pedidos</a></li>
-            <li><a href="sobre.jsp">Sobre Nós</a></li>
-            <li><a href="contato.jsp">Contato</a></li>
             <li><a href="AltUsuario">Alterar dados</a></li>
         </ul>
         <div class="nav-auth-buttons">
@@ -57,6 +55,9 @@
     <div class="page-header">
         <h2>Nosso Catálogo de Veículos</h2>
     </div>
+    <div style="text-align:center; margin-top: 30px; margin-bottom: 30px;">
+        <a href="VeiculoCadastroView.jsp" class="btn btn-primary">Cadastrar novo veículo</a>
+    </div>
 
     <c:if test="${not empty mensagemErro}">
         <div class="info-message error-message">${mensagemErro}</div>
@@ -71,7 +72,7 @@
                 <c:forEach var="v" items="${veiculos}">
                     <div class="vehicle-card">
                         <div class="card-image">
-                            <img src="${v.imagem}" alt="${v.modelo}">
+                            <img src="<c:url value='/${v.imagem}' />" alt="${v.modelo}" />
                         </div>
                         <div class="card-details">
                             <h3>${v.marca} ${v.modelo}</h3>
@@ -106,9 +107,7 @@
         </c:choose>
     </div>
 
-    <div style="text-align:center; margin-top: 30px; margin-bottom: 30px;">
-        <a href="VeiculoCadastroView.jsp" class="btn btn-primary">Cadastrar novo veículo</a>
-    </div>
+ 
 </main>
 
 <footer>

@@ -61,7 +61,7 @@ public class ManterVeiculo extends DAO {
         List<Veiculo> lista = new ArrayList<>();
         try {
             abrirBanco();
-            String sql = "SELECT * FROM veiculo";
+            String sql = "SELECT * FROM veiculo order by idVeiculo desc";
             pst = con.prepareStatement(sql);
             rs = pst.executeQuery();
 
@@ -106,9 +106,9 @@ public class ManterVeiculo extends DAO {
                 veiculo.setIdVeiculo(rs.getInt("idVeiculo"));
 
                 try {
-                    veiculo.setCategoriaVeiculo(CategoriaVeiculo.valueOf(rs.getString("categoriaVeiculo")));
+                    veiculo.setCategoriaVeiculo(CategoriaVeiculo.valueOf(rs.getString("categoria")));
                 } catch (IllegalArgumentException e) {
-                    System.err.println("Categoria inválida para o veículo ID " + idVeiculo + ": '" + rs.getString("categoriaVeiculo") + "'.");
+                    System.err.println("Categoria inválida para o veículo ID " + idVeiculo + ": '" + rs.getString("categoria") + "'.");
                     veiculo.setCategoriaVeiculo(CategoriaVeiculo.Carro); // Valor padrão
                 }
 

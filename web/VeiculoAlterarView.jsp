@@ -28,8 +28,6 @@
                     <li><a href="ListaVeiculo">Catálogo</a></li>
                     <li><a href="CarrinhoView.jsp">Carrinho</a></li> 
                     <li><a href="PedidosView.jsp">Pedidos</a></li>
-                    <li><a href="sobre.jsp">Sobre Nós</a></li>
-                    <li><a href="contato.jsp">Contato</a></li>
                     <li><a href="AltVeiculo">Alterar dados</a></li> 
                 </ul>
                 <div class="nav-auth-buttons">
